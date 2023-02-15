@@ -1,0 +1,19 @@
+{
+  "name": "bot-discord-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chatgpt": "^4.4.0",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
+}
