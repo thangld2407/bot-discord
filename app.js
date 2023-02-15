@@ -37,11 +37,9 @@ const start = async () => {
 
     //Listen events
     for (const [_, event] of Object.entries(events)) {
-      if (event.once) {
-        bot.once(event.name, event.execute);
-      } else {
-        bot.on(event.name, event.execute);
-      }
+      event.once
+        ? bot.once(event.name, event.execute)
+        : bot.on(event.name, event.execute);
     }
 
     bot.login(TOKEN);
