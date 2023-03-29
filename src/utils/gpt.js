@@ -1,3 +1,5 @@
+import "dotenv/config";
+
 import { ChatGPTAPI } from "chatgpt";
 
 const GPT = new ChatGPTAPI({
